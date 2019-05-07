@@ -7,18 +7,36 @@
   <title>Rich Text Example</title>
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-  <style>
-    body {
-      font-family: "Open Sans", Arial, Helvetica, sans-serif;
-    }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
-      font-weight: normal;
-    }
-  </style>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="shortcut icon" href="./images/comphanny-icon-color.png" type="image/png">
 </head>
 <body>
-  <h1>Rich Text Example</h1>
+  <main>
+      <article itemscope itemprop="https://schema.org/Organization" class="info">
+        <header>
+          <h1 itemprop="name">Comphanny</h1>
+          <h3 class="em">Phun, phamily phans</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </header>
+    
+        <img itemprop="image" src="./images/bg-landing.png">
+    
+        <footer>
+          <address itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <h5>Main Address</h5>
+              <span itemprop="streetAddress">8030 Paddocks Mill Dr</span><br>
+              <span itemprop="addressLocality">Cumming</span>, Georgia(<span itemprop="addressRegion">GA</span>), <span itemprop="postalCode">30041</span>
+          </address>
+    
+          E-mail: <a itemprop="email" href="#">hello@example.com</a><br>
+          Tel: <span itemprop="telephone">(678) 513-4731</span><br>
+          <br>
+          Founders:
+          <span itemprop="founder" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">John Doe</span>
+          </span>
+        </footer>
+      </article>
+  </main>
 </body>
 </html>
